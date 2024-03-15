@@ -31,24 +31,22 @@
           class="vertical w-5 h-5 mb-1"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
+          viewBox="0 0 640 512"
         >
           <path
-            d="M11.074 4 8.442.408A.95.95 0 0 0 7.014.254L2.926 4h8.148ZM9 13v-1a4 4 0 0 1 4-4h6V6a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1v-2h-6a4 4 0 0 1-4-4Z"
-          />
-          <path
-            d="M19 10h-6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Zm-4.5 3.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM12.62 4h2.78L12.539.41a1.086 1.086 0 1 0-1.7 1.352L12.62 4Z"
+            id="path-code"
+            fill="#b0b0b0"
+            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
           />
         </svg>
-        <span class="sr-only">Wallet</span>
+        <span class="sr-only">code</span>
       </button>
       <div
         id="tooltip-wallet"
         role="tooltip"
         class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 shadow-sm opacity-0 tooltip dark:bg-gray-700"
       >
-        Wallet
+        code
         <div class="tooltip-arrow" data-popper-arrow></div>
       </div>
 
@@ -113,23 +111,41 @@
   transform: skewY(10deg);
 }
 
+.nav-jajargenjang:hover {
+  background-color: #242624;
+  border-top: 3px solid rgb(35, 120, 24);
+}
+.home {
+  transition: color 0.1s ease;
+}
+.home:hover {
+  color: rgb(255, 255, 255);
+}
+#profile:hover {
+  color: rgb(255, 255, 255);
+}
+button:hover svg path {
+  fill: white;
+}
+
 @media (min-width: 1024px) {
   .nav-jajargenjang {
     left: auto;
     top: 45%;
-    right: 5%;
+    right: 2%;
     rotate: 90deg;
-    transition: border-bottom-color 0.4s ease;
   }
   .vertical {
     rotate: 270deg;
   }
   .nav-jajargenjang:hover {
     background-color: #242624;
-    border-bottom: 3px solid rgb(35, 120, 24);
+    border-bottom: 5px solid rgb(35, 120, 24);
+    border-top: none;
+    transition: border-bottom-color 1s ease;
   }
   .home {
-    transition: color 0.1s ease;
+    transition: color 0.5s ease;
   }
   .home:hover {
     color: rgb(255, 255, 255);
