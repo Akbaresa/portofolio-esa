@@ -19,9 +19,9 @@ const setActiveTab = (tab) => {
           class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0"
         >
           <li>
-            <button
+            <a
               @click="setActiveTab('web')"
-              ref="#"
+              href="/web-developer"
               :class="{
                 active: activeTab === 'web',
                 'bg-teal-600': activeTab === 'web',
@@ -42,7 +42,7 @@ const setActiveTab = (tab) => {
                 />
               </svg>
               Web Developer
-            </button>
+            </a>
           </li>
           <li>
             <button
@@ -98,195 +98,7 @@ const setActiveTab = (tab) => {
             </button>
           </li>
         </ul>
-        <div class="flex flex-col gap-2 overflow-y-auto h-[80vh]">
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="">
-            <a
-              href="#"
-              class="block md:max-w-sm p-6 bg-white border text-gray-700 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-white-800 dark:border-teal-700"
-            >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shipper</h5>
-              <p class="text-gray-800 dark:text-gray-400 text-sm">
-                Ini adalah website tentang pengiriman barang penyimpanan barang dalam
-                jangka waktu tertentu
-              </p>
-              <div class="mt-2">
-                <button
-                  class="w-15 bg-white-200 shadow-md shadow-teal-500/30 bg-gray-100 text-teal-500 border inline-flex py-1 px-2 rounded hover:bg-gray-500 hover:text-teal-300 transition-colors duration-100 ease-in-out"
-                >
-                  <svg
-                    class="transition-colors duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-                    />
-                  </svg>
-                  <p class="ml-2 font-semibold transition-colors duration-100">github</p>
-                </button>
-              </div>
-            </a>
-          </div>
-        </div>
-
+        <div class="flex flex-col gap-2 overflow-y-auto h-[80vh]"></div>
         <div class="w-45 mt-2 md:max-w-md md:mt-0 md:ml-2">
           <img class="border-gray-200 rounded-md" src="/shipper.jpg" alt="" />
         </div>
